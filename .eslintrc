@@ -11,10 +11,8 @@
       "node": true
     },
     "rules": {
-        "rules": {
-            "semi": 1,
-            "indent": ["warn", 2],
-            "no-debugger": "warn" // new line
-        }
+        "semi": 1,
+        "indent": ["warn", 2],
+        "no-debugger": "warn" // new line
     }
 }
