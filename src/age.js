@@ -23,18 +23,18 @@ Age.prototype.ageCalc = function(age)
 
 Age.prototype.lifeLeft = function(age, sex)
 {
-  
+  let life = [];
   if (sex === "male")
   {
-    const life = [76.1, 18.26, 47.18, 143.07, 902.55]
+   life = [76.1, 18.26, 47.18, 143.07, 902.55]
   }
   else if (sex === "female")
   {
-  const life = [81.1, 19.46, 50.28, 152.47, 961.87]
+ life = [81.1, 19.46, 50.28, 152.47, 961.87]
   }
   else
   {
-    const life = [100, 24, 62, 188, 1186]
+   life = [100, 24, 62, 188, 1186]
   }
 
   const person = new Age(age);
