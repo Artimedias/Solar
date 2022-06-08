@@ -21,9 +21,22 @@ Age.prototype.ageCalc = function(age)
   return ageArray;
 };
 
-Age.prototype.lifeLeft = function(age)
+Age.prototype.lifeLeft = function(age, sex)
 {
-  const life = [100, 24, 62, 188, 1186]
+  
+  if (sex === "male")
+  {
+    const life = [76.1, 18.26, 47.18, 143.07, 902.55]
+  }
+  else if (sex === "female")
+  {
+  const life = [81.1, 19.46, 50.28, 152.47, 961.87]
+  }
+  else
+  {
+    const life = [100, 24, 62, 188, 1186]
+  }
+
   const person = new Age(age);
   const ageArray = person.ageCalc(person.age)
 

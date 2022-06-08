@@ -12,7 +12,7 @@ describe('Age', () => {
     });
 
     test('should correctly return the users age on earth, mercury, and venus', () => {
-        const person = new Age(75);
+        const person = new Age(75, "neither");
         expect(person.lifeLeft(person.age)[0]).toEqual(25);
         expect(person.lifeLeft(person.age)[1]).toEqual(6);
         expect(person.lifeLeft(person.age)[2]).toEqual(15.5);
