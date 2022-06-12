@@ -31,13 +31,11 @@ describe('lifeLeft', () => {
       });
 
       test('should correctly return the users life expectancy on earth, mercury, and venus, assuming they are not male or female', () => {
-       
         expect(person.lifeLeft(person.life)[0]).toEqual(25);
         expect(person.lifeLeft(person.life)[1]).toEqual(6);
         expect(person.lifeLeft(person.life)[2]).toEqual(15.5);
         expect(person.lifeLeft(person.life)[3]).toEqual(47);
-        expect(person.lifeLeft(person.life)[4]).toEqual(296.5);
-        
+        expect(person.lifeLeft(person.life)[4]).toEqual(296.5); 
     });
 
     test('should correctly return the users life expectancy on earth, mercury, and venus, assuming they are male', () => {
@@ -46,7 +44,6 @@ describe('lifeLeft', () => {
         expect(male.lifeLeft(person.life)[2]).toEqual(0.68);
         expect(male.lifeLeft(person.life)[3]).toEqual(2.07);
         expect(male.lifeLeft(person.life)[4]).toEqual(13.05);
-        
     });
 
     test('should correctly return the users life expectancy on earth, mercury, and venus, assuming they are female', () => {
@@ -55,6 +52,5 @@ describe('lifeLeft', () => {
         expect(female.lifeLeft(person.life)[2]).toEqual(3.78);
         expect(female.lifeLeft(person.life)[3]).toEqual(11.47);
         expect(female.lifeLeft(person.life)[4]).toEqual(72.37);
-        
     });
 });
