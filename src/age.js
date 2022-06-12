@@ -40,11 +40,15 @@ lifeLeft() {
 
   
   ageArray = this.ageCalc();
-  console.log(ageArray);
 
   for (let i = 0; i < 5; i++)
   {
      life[i] = (life[i] - ageArray[i]);
+     if((life[i]).toString().length > 5)
+     {
+       life[i] = life[i].toFixed(2);
+       life[i] = parseFloat(life[i]);
+     }
   }
   return life;
 }
