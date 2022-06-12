@@ -11,7 +11,7 @@ describe('Age', () => {
         expect(player.ageCalc(player.age)[4]).toEqual(213.48);
     });
 
-    test('should correctly return the users age on earth, mercury, and venus', () => {
+    test('should correctly return the users life expectancy on earth, mercury, and venus', () => {
         const person = new Age(75, "neither");
         expect(person.lifeLeft(person.age)[0]).toEqual(25);
         expect(person.lifeLeft(person.age)[1]).toEqual(6);
